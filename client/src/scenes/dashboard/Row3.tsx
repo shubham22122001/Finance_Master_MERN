@@ -198,10 +198,7 @@ const Row3 = () => {
           ></Box>
         </Box>
         <Typography margin="0 1rem" variant="h6">
-          Orci aliquam enim vel diam. Venenatis euismod id donec mus lorem etiam
-          ullamcorper odio sed. Ipsum non sed gravida etiam urna egestas
-          molestie volutpat et. Malesuada quis pretium aliquet lacinia ornare
-          sed. In volutpat nullam at est id cum pulvinar nunc.
+        Each object represents a financial record and includes properties such as id, title, description, category, amount, and date. The data is used to populate the finance dashboard app with transaction information, and it is also used to train a machine learning model to make predictions about future financial transactions.
         </Typography>
       </DashboardBox>
     </>
