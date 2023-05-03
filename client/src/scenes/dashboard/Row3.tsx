@@ -201,6 +201,7 @@ const Row3 = () => {
         Each object represents a financial record and includes properties such as id, title, description, category, amount, and date. The data is used to populate the finance dashboard app with transaction information, and it is also used to train a machine learning model to make predictions about future financial transactions.
         </Typography>
       </DashboardBox>
+      
     </>
   );
 };
