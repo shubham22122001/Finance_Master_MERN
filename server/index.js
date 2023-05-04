@@ -22,14 +22,14 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
+// app.use(cors());
 // const cors = require('cors') 
-// app.use(
-//   cors({
-//       credentials: true,
-//       origin: "http://127.0.0.1:8000",
-//   })
-// );
+app.use(
+  cors({
+      credentials: true,
+      origin: "http://127.0.0.1:5173",
+  })
+);
 
 /* ROUTES */
 app.use("/kpi", kpiRoutes);
