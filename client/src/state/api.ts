@@ -11,15 +11,15 @@ export const api = createApi({
   tagTypes: ["Kpis", "Products", "Transactions"],
   endpoints: (build) => ({
     getKpis: build.query<Array<GetKpisResponse>, void>({
-      query: () => "kpi/kpis/",
+      query: () => "kpi/kpis",
       providesTags: ["Kpis"],
     }),
     getProducts: build.query<Array<GetProductsResponse>, void>({
-      query: () => "product/products/",
+      query: () => "product/products",
       providesTags: ["Products"],
     }),
     getTransactions: build.query<Array<GetTransactionsResponse>, void>({
-      query: () => "transaction/transactions/",
+      query: () => "transaction/transactions",
       providesTags: ["Transactions"],
     }),
   }),
