@@ -23,6 +23,13 @@ app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+// const cors = require('cors') 
+// app.use(
+//   cors({
+//       credentials: true,
+//       origin: "http://127.0.0.1:8000",
+//   })
+// );
 
 /* ROUTES */
 app.use("/kpi", kpiRoutes);
