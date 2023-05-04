@@ -32,9 +32,9 @@ app.use(
 );
 
 /* ROUTES */
-app.use("/kpi", kpiRoutes);
-app.use("/product", productRoutes);
-app.use("/transaction", transactionRoutes);
+app.use("/server/kpi", kpiRoutes);
+app.use("/server/product", productRoutes);
+app.use("/server/transaction", transactionRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
